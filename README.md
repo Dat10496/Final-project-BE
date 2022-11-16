@@ -129,3 +129,6 @@ As a admin page, you can edit, upload, get , delete your items
 * @access Public
 * /
 ```
+
+## Diagram Relation
+![diagram image](./image//sneaker_diagram.png)
