@@ -8,7 +8,7 @@ In this app, you can search, get information and make a payment for this sneaker
 
 User can login faster by google account, and make a payment online via paypal. After user make a payment successfully user will receive a information mail about this purchase
 
-As a owner shop, i use adminjs dashboard which owner easily manage the products, user and the payment
+As a owner shop, i use adminjs dashboard which owner easily manage the products, user and the payment with CRUD
 
 Admin page: https://sneaker-be.herokuapp.com/admin/login
 
@@ -104,8 +104,6 @@ As a admin page, you can edit, upload, get , delete your items
  */
 ```
 
-
-
 ### Items
 
 ```Javascript
@@ -125,4 +123,5 @@ As a admin page, you can edit, upload, get , delete your items
 ```
 
 ## Diagram Relation
+
 ![diagram image](./image//sneaker_diagram.png)
