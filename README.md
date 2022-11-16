@@ -1,6 +1,16 @@
-# Sneakers
+# Sneaker Store
 
-Sneaker is a page that user can search, get information about various sneakers. You can select, buy and make a payment for this shoes
+Sneaker Store is a place where you can find and buy for your ambition sneakers that you need
+
+# Description
+
+In this app, you can search, get information and make a payment for this sneaker if you love it
+
+User can login faster by google account, and make a payment online via paypal. After user make a payment successfully user will receive a information mail about this purchase
+
+As a owner shop, i use adminjs dashboard which owner easily manage the products, user and the payment
+
+Admin page: https://sneaker-be.herokuapp.com/admin/login
 
 ## User Story
 
@@ -23,6 +33,7 @@ As a admin page, you can edit, upload, get , delete your items
 -[] as a admin shop, i can edit item
 -[] as a admin shop, i can create new item
 -[] as a admin shop, i can delete the item
+-[] as a admin shop, i can get list of items
 
 ### Items
 
@@ -75,42 +86,25 @@ As a admin page, you can edit, upload, get , delete your items
 // Route for user make a payment
 ```
 
-### Admin APIs
+### Payment APIs
 
 ```Javascript
 /**
- * @route POST /admins
- * @description Register new admin
- * @body {name, email, password}
- * @access Public
- * /
+ * @route GET /payment
+ * @description Get payment's detail
+ * @access Login
+ */
 ```
 
 ```Javascript
 /**
- * @route PUT /admins/items/:id
- * @description Update the item
- * @body {quantity, images, details, brand, price}
- * @access Login required
- * /
+ * @route POST /payment
+ * @description Post info of user's payment
+ * @access Login
+ */
 ```
 
-```Javascript
-/**
- * @route POST /admins/items
- * @description Create new item
- * @body {name, quantity, images, description}
- * @access Login required
- * /
-```
 
-```Javascript
-/**
- * @route DELETE /admins/items/:id
- * @description Delete the item
- * @access Login required
- * /
-```
 
 ### Items
 
