@@ -2,6 +2,8 @@
 
 Sneaker Store is a place where you can find and buy for your ambition sneakers that you need
 
+You can go to page via https://sneaker-store-dat.netlify.app/
+
 # Description
 
 In this app, you can search, get information and make a payment for this sneaker if you love it
