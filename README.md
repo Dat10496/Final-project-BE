@@ -49,7 +49,7 @@ As a admin page, you can edit, upload, get , delete your items
 ```Javascript
 /**
  * @route POST /users/login
- * @description Log in with username and password
+ * @description Login with username and password
  * @body {email, password}
  * @access Public
  * /
