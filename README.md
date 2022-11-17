@@ -55,13 +55,34 @@ As a admin page, you can edit, upload, get , delete your items
  * /
 ```
 
+### Auth Google APIs
+
 ```Javascript
 /**
- * @route POST /admins/login
- * @description Log in with username and password
- * @body {email, password}
- * @access Public
- * /
+ * @route POST /auth/google/login/success
+ * @description Get user's information after login by google
+ */
+```
+
+```Javascript
+/**
+ * @route GET /auth/google/login/failed
+ * @description Response if login error
+ */
+```
+
+```Javascript
+/**
+ * @route GET /auth/google
+ * @description Direct to login google page
+ */
+```
+
+```Javascript
+/**
+ * @route GET /auth/google/callback
+ * @description Receive google'response after login via google account
+ */
 ```
 
 ### Users APIs
@@ -77,6 +98,14 @@ As a admin page, you can edit, upload, get , delete your items
 
 ```Javascript
 /**
+ * @route GET /users/me
+ * @description Get current user Info
+ * @access Login required
+ **/
+```
+
+```Javascript
+/**
  * @route PUT /users
  * @description Update user's profile
  * @body {name, phoneNumber, address}
@@ -85,7 +114,19 @@ As a admin page, you can edit, upload, get , delete your items
 ```
 
 ```Javascript
-// Route for user make a payment
+/**
+ * @route PUT /users/addcart
+ * @description Add product to user's cart
+ * @access Login required
+ */
+```
+
+```Javascript
+/**
+ * @route GET /users/history
+ * @description Get payment'history
+ * @access Login required
+ */
 ```
 
 ### Payment APIs

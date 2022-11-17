@@ -13,7 +13,7 @@ router.post("/login/success", loginWithGoogle);
 
 /**
  * @route GET /auth/google
- * @description Direct login google page
+ * @description Direct to login google page
  */
 router.get(
   "/",
@@ -32,13 +32,13 @@ router.get("/login/failed", function (req, res, next) {
 
 /**
  * @route GET /auth/google/callback
- * @description Receive google'response after login
+ * @description Receive google'response after login via google account
  */
 router.get(
   "/callback",
   passport.authenticate("google", {
     failureRedirect:
-      "https://sneaker-be.herokuapp.com/v1/auth/google/login/failed",
+      "https://sneaker-app-dat.herokuapp.com/v1/auth/google/login/failed",
   }),
   redirectToClient
 );
