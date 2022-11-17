@@ -12,7 +12,7 @@ User can login faster by google account, and make a payment online via paypal. A
 
 As a owner shop, i use adminjs dashboard which owner easily manage the products, user and the payment with CRUD
 
-Admin page: https://sneaker-be.herokuapp.com/admin/login
+Admin page: https://sneaker-app-dat.herokuapp.com/admin/login
 
 ## User Story
 
