@@ -2,6 +2,9 @@
   "name": "shoesshop-be",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": "v16.14.0"
+  },
   "scripts": {
     "start": "nodemon ./bin/www",
     "seed": "node seed/seed.js"
