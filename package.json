@@ -1,6 +1,9 @@
 {
   "name": "shoesshop-be",
   "version": "0.0.0",
+  "engines": {
+    "node": ">= 0.4.1 < 0.5.0"
+  },
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
