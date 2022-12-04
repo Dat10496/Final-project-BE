@@ -10,3 +10,4 @@ const redirectToClient = catchAsync(async (req, res, next) => {
 });
 
 module.exports = redirectToClient;
+  
