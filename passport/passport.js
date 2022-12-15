@@ -22,7 +22,7 @@ passport.use(
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       callbackURL:
-        "https://sneaker-app-dat.herokuapp.com/v1/auth/google/callback",
+        "https://sneaker-app-api.onrender.com/v1/auth/google/callback",
       scope: ["profile"],
     },
 
