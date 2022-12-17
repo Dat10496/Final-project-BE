@@ -16,31 +16,31 @@ Admin page: https://sneaker-app-dat.herokuapp.com/admin/login
 
 ## User Story
 
-As a user, you can get and select items
+- As a user, you can get and select items
 
-As a admin page, you can edit, upload, get , delete your items
+- As a admin page, you can edit, upload, get , delete your items
 
 ### Authentication
 
--[] as a user, i can register and login with name, email, password
--[] as a admin shop, i can register and login with name, email, password
+- As a user, i can register and login with name, email, password
+- As a admin shop, i can register and login with name, email, password
 
 ### Users
 
--[] as a user, i can see list of items
--[] as a user, i can update my profile
+- As a user, i can see list of items
+- As a user, i can update my profile
 
 ### Admin
 
--[] as a admin shop, i can edit item
--[] as a admin shop, i can create new item
--[] as a admin shop, i can delete the item
--[] as a admin shop, i can get list of items
+- As a admin shop, i can edit item
+- As a admin shop, i can create new item
+- As a admin shop, i can delete the item
+- As a admin shop, i can get list of items
 
 ### Items
 
--[] as a user and admin, i can get list of items
--[] as a user and admin, i can get detail of item
+- As a user and admin, i can get list of items
+- As a user and admin, i can get detail of item
 
 ## Endpoint APIs
 
