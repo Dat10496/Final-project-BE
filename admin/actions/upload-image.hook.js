@@ -2,23 +2,17 @@ const path = require("path");
 const fs = require("fs");
 const AdminJS = require("adminjs");
 const mv = require("mv");
+const cloudinaryUpload = require("../../helpers/cloudinary");
 
 /** @type {AdminJS.After<AdminJS.ActionResponse>} */
 const after = async (response, request, context) => {
   const { record, image } = context;
 
   if (record.isValid() && image) {
-    const filePath = path.join("uploads", record.id().toString(), image.name);
+    const filePath = await cloudinaryUpload(image);
 
-    await fs.promises.mkdir(path.dirname(filePath), { recursive: true });
-
-    mv(image.path, filePath, function (err) {
-      if (err) {
-        console.log(err, "save image err");
-      }
-    });
-
-    await record.update({ image: `/${filePath}` });
+    // update field image on adminjs
+    await record.update({ image: `${filePath}` });
   }
   return response;
 };

@@ -1,8 +1,9 @@
-const AdminJS = require("adminjs");
 const {
   after: uploadAfterHook,
   before: uploadBeforeHook,
 } = require("./actions/upload-image.hook");
+
+const { Components } = require("./components/customComponent.tsx");
 
 const option = {};
 
@@ -46,7 +47,8 @@ option.itemOption = {
     name: "Admin Content",
     icon: "fas fa-cogs",
   },
-  listProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
+  // listProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
+  // editProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
   filterProperties: [
     "_id",
     "brand",
@@ -59,12 +61,10 @@ option.itemOption = {
   ],
   properties: {
     image: {
-      isVisible: false,
-    },
-    image: {
+      type: "string",
       components: {
-        edit: AdminJS.bundle("../admin/components/upload-image.edit.tsx"),
-        list: AdminJS.bundle("../admin/components/upload-image.list.tsx"),
+        edit: Components.Image,
+        list: Components.ImageList,
       },
     },
   },

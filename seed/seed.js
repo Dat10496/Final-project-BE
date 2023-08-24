@@ -23,7 +23,7 @@ const refractorData = async () => {
       price: Math.floor(Math.random() * (2000 - 10) + 10),
       details: data.Product_details,
       rating: parseFloat(data["RATING"]),
-      image: `/images/${index + 1}.jpg`,
+      image: `/images/image-${index + 1}.jpg`,
     };
   });
 
