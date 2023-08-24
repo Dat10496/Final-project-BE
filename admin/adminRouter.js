@@ -7,6 +7,7 @@ const AdminJSMongoose = require("@adminjs/mongoose");
 const authenticate = require("./authenticate");
 const Admin = require("../models/Admin");
 
+
 const mongoUri = process.env.MONGO_URI;
 
 /**
@@ -18,6 +19,8 @@ AdminJS.registerAdapter({
 });
 
 const admin = new AdminJS(Admin);
+
+admin.watch();
 
 const sessionStore = new MongoDBStore({
   uri: mongoUri,
