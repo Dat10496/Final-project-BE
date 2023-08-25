@@ -1,4 +1,4 @@
-require("dotenv").config;
+require("dotenv").config();
 
 // Default admin
 const DEFAULT_ADMIN = {
