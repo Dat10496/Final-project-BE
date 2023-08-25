@@ -1,8 +1,5 @@
-const path = require("path");
-const fs = require("fs");
-const AdminJS = require("adminjs");
-const mv = require("mv");
 const cloudinaryUpload = require("../../helpers/cloudinary");
+const AdminJS = require("adminjs");
 
 /** @type {AdminJS.After<AdminJS.ActionResponse>} */
 const after = async (response, request, context) => {

@@ -2,9 +2,7 @@
   "name": "shoesshop-be",
   "version": "0.0.0",
   "private": true,
-  "engines": {
-    "node": ">=18"
-  },
+  
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
