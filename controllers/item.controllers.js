@@ -11,7 +11,7 @@ itemControllers.getAllItems = catchAsync(async (req, res, next) => {
 
   // Process
   // Set Filter
-  const filterConditions = [{ isDeleted: false }];
+  const filterConditions = [{ isDeleted: false, createdAt: -1, updatedAt: -1 }];
   const sortConditions = {};
 
   if (filter.brand) {

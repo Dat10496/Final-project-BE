@@ -1,6 +1,7 @@
 const User = require("./User");
 const Item = require("./Item");
 const Payment = require("./Payment");
+const { componentLoader } = require("../admin/components/customComponent.tsx");
 
 const {
   userOption,
@@ -26,6 +27,7 @@ const Admin = {
   branding: {
     companyName: "Sneaker Store",
   },
+  componentLoader,
 };
 
 module.exports = Admin;
