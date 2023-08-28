@@ -8,6 +8,7 @@
     "seed": "node seed/seed.js"
   },
   "dependencies": {
+    "@adminjs/design-system": "^4.0.2",
     "@adminjs/express": "^5.0.1",
     "@adminjs/mongoose": "^3.0.1",
     "@sendgrid/mail": "^7.7.0",
@@ -41,6 +42,7 @@
     "passport-google-oauth20": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "styled-components": "^6.0.7",
     "swagger-jsdoc": "^6.2.5",
     "swagger-ui-express": "^4.5.0",
     "tslib": "^2.4.0"
