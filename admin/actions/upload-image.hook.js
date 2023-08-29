@@ -4,12 +4,14 @@ const AdminJS = require("adminjs");
 /** @type {AdminJS.After<AdminJS.ActionResponse>} */
 const after = async (response, request, context) => {
   const { record, image } = context;
-
-  if (record.isValid() && image) {
+ 
+  if (typeof image !== "string" && record.isValid()) {
     const filePath = await cloudinaryUpload(image);
 
     // update field image on adminjs
-    await record.update({ image: `${filePath}` });
+    if (filePath) {
+      await record.update({ image: `${filePath}` });
+    }
   }
   return response;
 };

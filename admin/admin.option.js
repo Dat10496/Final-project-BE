@@ -47,8 +47,8 @@ option.itemOption = {
     name: "Admin Content",
     icon: "fas fa-cogs",
   },
-  // listProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
-  // editProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
+  listProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
+  editProperties: ["brand", "totalSold", "price", "rating", "details", "image"],
   filterProperties: [
     "_id",
     "brand",

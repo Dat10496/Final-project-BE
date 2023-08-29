@@ -7,7 +7,7 @@ import {
   DropZoneItem,
 } from "@adminjs/design-system";
 import { BasePropertyProps } from "adminjs";
-import cloudinaryUpload from "../../helpers/cloudinary";
+
 
 const Edit: React.FC<BasePropertyProps> = (props) => {
   const { property, onChange, record } = props;

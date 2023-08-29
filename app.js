@@ -63,7 +63,7 @@ mongoose
   .then(() => console.log("Connected DB"))
   .catch((err) => console.log(err, "Connect DB Error"));
 
-mongoose.set("strictQuery", false);
+// mongoose.set("strictQuery", true);
 // Error handlers
 // Catch 404
 app.use((req, res, next) => {
