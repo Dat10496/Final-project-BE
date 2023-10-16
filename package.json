@@ -35,7 +35,6 @@
     "mongoose": "^6.7.0",
     "mongoose-seed": "^0.6.0",
     "morgan": "~1.10.0",
-    "node": "^19.0.0",
     "nodemon": "^2.0.20",
     "package_name": "^1.0.2",
     "passport": "^0.6.0",
