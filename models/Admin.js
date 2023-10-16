@@ -1,13 +1,21 @@
 const User = require("./User");
+
 const Item = require("./Item");
 const Payment = require("./Payment");
-const { componentLoader } = require("../admin/components/customComponent.tsx");
+const {
+  componentLoader,
+  Components,
+} = require("../admin/components/customComponent.tsx");
 
 const {
   userOption,
   itemOption,
   paymentOption,
 } = require("../admin/admin.option");
+
+const {
+  dashboardHandler,
+} = require("../admin/components/adminDashBoard/dashboardHandler.tsx");
 
 const Admin = {
   resources: [
@@ -28,6 +36,10 @@ const Admin = {
     companyName: "Sneaker Store",
   },
   componentLoader,
+  dashboard: {
+    component: Components.DashBoard,
+    handler: dashboardHandler,
+  },
 };
 
 module.exports = Admin;

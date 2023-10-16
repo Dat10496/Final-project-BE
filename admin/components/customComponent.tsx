@@ -6,6 +6,7 @@ const componentLoader = new ComponentLoader();
 const Components = {
   Image: componentLoader.add("Image", "./upload-image.edit"),
   ImageList: componentLoader.add("ImageList", "./upload-image.list"),
+  DashBoard: componentLoader.add("DashBoard", "./adminDashBoard/dashboard"),
 };
 
 module.exports = { componentLoader, Components };
