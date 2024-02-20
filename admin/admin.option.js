@@ -3,7 +3,7 @@ const {
   before: uploadBeforeHook,
 } = require("./actions/upload-image.hook");
 
-const { Components } = require("./components/customComponent.tsx");
+const Components = require("./components/customComponent.tsx");
 
 const option = {};
 

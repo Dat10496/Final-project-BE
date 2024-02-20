@@ -9,4 +9,4 @@ const Components = {
   DashBoard: componentLoader.add("DashBoard", "./adminDashBoard/dashboard"),
 };
 
-module.exports = { componentLoader, Components };
+module.exports = Components; 
