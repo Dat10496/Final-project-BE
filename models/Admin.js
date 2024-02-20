@@ -2,10 +2,7 @@ const User = require("./User");
 
 const Item = require("./Item");
 const Payment = require("./Payment");
-const {
-  componentLoader,
-  Components,
-} = require("../admin/components/customComponent.tsx");
+const Components = require("../admin/components/customComponent.tsx");
 
 const {
   userOption,
@@ -35,7 +32,7 @@ const Admin = {
   branding: {
     companyName: "Sneaker Store",
   },
-  componentLoader,
+  // componentLoader,
   dashboard: {
     component: Components.DashBoard,
     handler: dashboardHandler,
