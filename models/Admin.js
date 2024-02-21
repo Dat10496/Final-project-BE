@@ -2,7 +2,7 @@ const User = require("./User");
 
 const Item = require("./Item");
 const Payment = require("./Payment");
-const Components = require("../admin/components/customComponent.tsx");
+// const Components = require("../admin/components/customComponent.js");
 
 const {
   userOption,
@@ -10,9 +10,9 @@ const {
   paymentOption,
 } = require("../admin/admin.option");
 
-const {
-  dashboardHandler,
-} = require("../admin/components/adminDashBoard/dashboardHandler.tsx");
+// const {
+//   dashboardHandler,
+// } = require("../admin/components/adminDashBoard/dashboardHandler.tsx");
 
 const Admin = {
   resources: [
@@ -33,10 +33,10 @@ const Admin = {
     companyName: "Sneaker Store",
   },
   // componentLoader,
-  dashboard: {
-    component: Components.DashBoard,
-    handler: dashboardHandler,
-  },
+  // dashboard: {
+  //   component: Components.DashBoard,
+  //   handler: dashboardHandler,
+  // },
 };
 
 module.exports = Admin;
