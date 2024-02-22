@@ -2,7 +2,6 @@ require("dotenv").config();
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
 const passport = require("passport");
 const User = require("../models/User");
-const { PORT } = process.env.PORT;
 
 passport.serializeUser(function (user, cb) {
   process.nextTick(function () {
@@ -21,8 +20,7 @@ passport.use(
     {
       clientID: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-      callbackURL:
-        "https://sneaker-app-api.onrender.com/v1/auth/google/callback",
+      callbackURL: process.env.CB_BACKEND_URL,
       scope: ["profile"],
     },
 
